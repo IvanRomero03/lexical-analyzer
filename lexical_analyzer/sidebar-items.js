@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":["Token"],"fn":["main","process_text","take_token"],"struct":["ResultingToken"]};
