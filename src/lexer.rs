@@ -21,16 +21,17 @@ pub enum Token {
     LessThan,           // <
     GreaterThanOrEqual, // >=
     LessThanOrEqual,    // <=
+    Whitespace,         // Whitespace (ignored)
 }
 
 lexer! {
     pub(crate) fn take_token(text: 'a) -> Token;
-    r#"-?[0-9]+\.[0-9]+"# => Token::Float(text.parse().unwrap()),
+    r#"-?[0-9]*\.[0-9]*"# => Token::Float(text.parse().unwrap()),
     r#"-?[0-9]+"# => Token::Int(text.parse().unwrap()),
     r#"if"# => Token::If,
     r#"else"# => Token::Else,
     r#"while"# => Token::While,
-    r#"[a-z|A-Z]+[(a-z)|(A-Z)|(0-9)|(_)]*"# => {
+    r#"[a-zA-Z][a-zA-Z0-9_]*"# => {
         let txt = text.to_string();
         Token::String(txt)
     },
