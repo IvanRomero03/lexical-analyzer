@@ -1,9 +1,32 @@
 # Lexical analyzer
+A00833623 - Ivan Romero
+This is a simple implementation of a lexical analyzer as we saw in class. It tokenizes input strings into various types of tokens, including integers, floats, strings, and keywords. It also supports operators like `+=`, `-=`, `*=`, `/=`, and `!=`. Only supports whitespace as a separator and a single line of input. 
 
-Automated docs: https://ivanromero03.github.io/lexical-analyzer/lexical_analyzer/index.html
+Rust technical docs: https://ivanromero03.github.io/lexical-analyzer/lexical_analyzer/index.html
 
 # Usage
+The project uses Rust and Cargo. There are two ways to run the project: either using Cargo or running the pre-built binaries.
 
+# How to Run without Cargo/Rust
+I prepared the build for Windows x64, linux x64, macOS aarch64/x86_64 in the `build` folder. You can run the binary directly without needing to install Rust or Cargo. 
+
+```bash shell
+# For Windows
+cd build/x86_64-pc-windows-msvc/release
+./lexical-analyzer.exe
+# For Linux
+cd build/x86_64-unknown-linux-gnu/release
+./lexical-analyzer
+# For macOS
+cd build/aarch64-apple-darwin/release
+./lexical-analyzer
+# For macOS x86_64
+cd build/x86_64-apple-darwin/release
+./lexical-analyzer
+```
+
+## Using Cargo
+1. Make sure you have Rust and Cargo installed. If not, you can install them from [rustup.rs](https://rustup.rs/).
 ```bash
 cargo run
 ```
@@ -48,24 +71,9 @@ Tokens found
 # Lexical Analyzer
 This is a simple lexical analyzer written in Rust that tokenizes input strings into various types of tokens, including integers, floats, strings, and keywords. It also supports operators like `+=`, `-=`, `*=`, `/=`, and `!=`.
 
-# How to Run without Cargo/Rust
-I prepared the build for Windows x64, linux x64, macOS aarch64/x86_64 in the `build` folder. You can run the binary directly without needing to install Rust or Cargo. 
-```bash shell
-# For Windows
-cd build/x86_64-pc-windows-msvc/release
-./lexical-analyzer.exe
-# For Linux
-cd build/x86_64-unknown-linux-gnu/release
-./lexical-analyzer
-# For macOS
-cd build/aarch64-apple-darwin/release
-./lexical-analyzer
-# For macOS x86_64
-cd build/x86_64-apple-darwin/release
-./lexical-analyzer
-```
+
 
 ## Cross Compilation
-To cross-compile  for macOS from Linux check out this conversation:
+To cross-compile for macOS from Ubuntu check out this conversation:
 https://github.com/rust-lang/rust/issues/112501#issuecomment-1682426620
 
