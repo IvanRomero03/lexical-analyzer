@@ -1,0 +1,1 @@
+C:\Users\iwell\Desktop\lexical-analyzer\target\x86_64-pc-windows-msvc\release\liblexical_analyzer.rlib: C:\Users\iwell\Desktop\lexical-analyzer\src\lexer.rs C:\Users\iwell\Desktop\lexical-analyzer\src\lib.rs

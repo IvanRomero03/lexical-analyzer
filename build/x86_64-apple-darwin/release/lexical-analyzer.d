@@ -1,0 +1,1 @@
+/mnt/c/Users/iwell/Desktop/lexical-analyzer/./build/x86_64-apple-darwin/release/lexical-analyzer: /mnt/c/Users/iwell/Desktop/lexical-analyzer/src/lexer.rs /mnt/c/Users/iwell/Desktop/lexical-analyzer/src/lib.rs /mnt/c/Users/iwell/Desktop/lexical-analyzer/src/main.rs
