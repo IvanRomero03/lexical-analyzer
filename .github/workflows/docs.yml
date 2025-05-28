@@ -3,7 +3,7 @@ name: Deploy Rust Docs to GitHub Pages
 on:
   push:
     branches:
-      - main # or your default branch
+      - main
 
 jobs:
   build:
