@@ -25,5 +25,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .
+          publish_dir: ./target/doc/lexical_analyzer
           publish_branch: gh-pages
